@@ -18,7 +18,7 @@ public class TopLevelObjectController {
     
     static let cache = NSCache<NSString, UIImage>()
     
-    // Mind this error, important. You need to declare, your model array (obv going to be an array if you're going through an api of dogs here in this case, you need to put that object as an array in the fetch function in order to declare it as an array when decoding the data. Also don't underestimate the ability of leaving a problem for a few hours and refreshing your head then coming back to it :)
+    // Mind this error, important. You need to declare, your model array (obv going to be an array if you're going through an api of dogs here in this case, you need to put that object as an array in the fetch function in order to declare it as an array when decoding the data. 
     
     // Construct URL
     static func fetchDogs(completion: @escaping  (Result<TopLevelObject, UserError>) -> Void) {
